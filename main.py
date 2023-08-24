@@ -2,6 +2,8 @@ FILE = open('task9.txt', 'r+')
 
 file_list = [FILE.readline()]
 
+FILE.close()
+
 split_list = file_list[0].split()
 
 for i in split_list:
@@ -27,6 +29,8 @@ def get_words():
 print(get_words())
 with open('Append.txt', 'w') as file:
     print(new_list, file=file)
+
+file.close()
 
 number_words = len(split_list)
 print(f'A number of words are: {number_words}')

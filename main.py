@@ -1,8 +1,9 @@
-FILE = open('task9.txt', 'r+')
+with open('task9.txt', 'r+') as initial_file:
 
-file_list = [FILE.readline()]
 
-FILE.close()
+file_list = [initial_file.readline()]
+
+initial_file.close()
 
 split_list = file_list[0].split()
 
